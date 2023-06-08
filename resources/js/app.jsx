@@ -1,5 +1,10 @@
+//ESTILOS
 import './bootstrap';
 import '../css/app.css';
+//PRIMEREACT
+//THEME Y CORE
+import "primereact/resources/themes/lara-light-indigo/theme.css";     
+import "primereact/resources/primereact.min.css"; 
 
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
