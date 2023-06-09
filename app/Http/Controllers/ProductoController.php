@@ -32,7 +32,7 @@ class ProductoController extends Controller
         return redirect()->back();
     }
 
-    public function update(Request $request, Producto $producto)
+    public function update(Request $request, $id)
     {
         $producto = Producto::find($id);
         $producto->name = $request->name;
