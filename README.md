@@ -1,15 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><h1 width="400">CRUD Laravel-React</h1></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
 ## Sobre el proyecto
 
-Las tecnologias que se utilizaron en este proyecto son:
+Las tecnologías que se utilizaron en este proyecto son:
 
 - PHP.
 - Laravel.
@@ -20,7 +13,7 @@ Las tecnologias que se utilizaron en este proyecto son:
 - PrimeReact.
 - MySQL.
 
-Otras tecnologias utilizadas durante el desarrollo del proyecto:
+Otras tecnologías utilizadas durante el desarrollo del proyecto:
 
 - Laragon.
 - Visual Studio Code.
@@ -32,7 +25,6 @@ Herramientas necesarias antes de empezar el proyecto:
 - Node.js.
 - Git.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
 ## Learning Laravel
 
