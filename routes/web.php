@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BodegaController;
+use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -26,3 +27,5 @@ Route::get('/dashboard', function () {
 })->name('dashboard'); 
 
 Route::resource('/bodegas', BodegaController::class)->only(['index', 'store', 'update', 'destroy'])->names('bodegas');
+
+Route::resource('/productos', ProductoController::class)->only(['index', 'store', 'update', 'destroy'])->names('productos');
