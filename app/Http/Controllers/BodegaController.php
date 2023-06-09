@@ -12,7 +12,9 @@ class BodegaController extends Controller
     public function index()
     {
         return Inertia::render('Bodegas/Index', [
-            'bodegas' => Bodega::all(),
+            //Mientras no se tenga la bd esto estará comentado
+            /* 'bodegas' => Bodega::all(), */
+            'bodegas' => [],
         ]);
     }
 
