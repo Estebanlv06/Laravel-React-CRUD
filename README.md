@@ -82,13 +82,13 @@ composer install
 npm install
 ```
 
-7. Configura tu base de datos: Para configurar tu base de datos debes hacer una copia del archivo .env.example, lo puedes realizar ejecutando la siguiente línea de comando:
+6. Configura tu base de datos: Para configurar tu base de datos, haz una copia del archivo `.env.example` ejecutando el siguiente comando:
 ```
 cp .env.example .env
 ```
-Esto generará un archivo llamado .env, en este archivo puedes editar el nombre de tu base de datos que se generará al realizar las migraciones.
+Esto generará un archivo llamado `.env` que puedes editar para configurar el nombre de tu base de datos.
 
-Por ejemplo, en el archivo ".env", en la line donde esta DB_DATABASE puedes cambiar el nombre de tu base de datos:
+Por ejemplo, en el archivo `.env`, puedes cambiar el nombre de tu base de datos en la línea donde está `DB_DATABASE`:
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -97,18 +97,19 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-8. Construye tus tablas y atributos: Para crear tu base de datos, tablas y atributos (necesarios para el funcionamiento del proyecto), debes iniciar MySQL, en mi caso como uso Laragon solo debo abrir la aplicación y hacer click en el botón "Iniciar", este se encargará de iniciar un servidor web y el servicio de MySQL. Una vez iniciado los servicios se deben migrar las tablas del proyecto con el siguiente comando:
+7. Migración de la base de datos: Para crear la base de datos, las tablas y los atributos necesarios para el funcionamiento del proyecto, inicia MySQL. Si usas Laragon, simplemente haz clic en el botón "Iniciar". Una vez iniciados los servicios, ejecuta el siguiente comando para migrar las tablas del proyecto:
 ```
 php artisan migrate
 ```
-9. Si todo sale bien, ya podrás usar el proyecto en tu computadora de forma local, debes tener corriendo los servicios de MySQL y el servidor Web, a través de Laragon. Además, debes tener compilado los componentes de React con el siguiente comando:
+Si todo ha ido bien, podrás utilizar el proyecto en tu computadora local. Asegúrate de tener los servicios de MySQL y el servidor web en funcionamiento a través de Laragon. Además, verifica que los componentes de React estén compilados ejecutando el siguiente comando:
 ```
 npm run dev
 ```
-Y por último, debes ejecutar el servidor de desarrollo de Laravel para probar el proyecto en tu máquina local. Utiliza el siguiente comando:
+Después, ejecuta el servidor de desarrollo de Laravel para probar el proyecto en tu máquina local utilizando el siguiente comando:
 ```
 php artisan serve
 ```
+Si la consola muestra el mensaje `INFO Server running on [http://127.0.0.1:8000].`, puedes hacer clic con el botón derecho mientras presionas la tecla `Ctrl` en la dirección `http://127.0.0.1:8000` para abrir el proyecto en tu navegador predeterminado.
 
 Con estos pasos debería funcionar el proyecto en tu computador.
 
