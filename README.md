@@ -17,6 +17,7 @@ Otras tecnologías utilizadas durante el desarrollo del proyecto:
 
 - Laragon.
 - Visual Studio Code.
+- GitHub.
 
 Herramientas necesarias antes de empezar el proyecto:
 
