@@ -1,5 +1,16 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><h1 width="400">CRUD Laravel-React</h1></a></p>
 
+## Antes de empezar
+
+Algunos puntos importantes sobre este proyecto:
+
+- Si bien, este proyecto no está completo, se pueden realizar las acciones más importantes de un CRUD.
+- La eliminación en cascada no está disponible, por lo que si se desea eliminar, por ejemplo, un producto que está en una bodega, la aplicación mostrará un error (por ahora este error no es controlado).
+- El proyecto contiene varios archivos innecesarios que fueron instalados por breeze, que permite una aplicación Laravel y React conjunta (en un solo archivo). Estos archivos no generan errores en la aplicación.
+- En próximas actualizaciones, se comentarán los archivos para un mejor entendimiento de lo que se está haciendo en cada línea de código.
+- La parte visual del proyecto irá cambiando.
+- A futuro se creará un proyecto que contendrá esta aplicación pero con autenticación y un login.
+
 ## Sobre el proyecto
 
 Descripción del proyecto:
@@ -34,7 +45,7 @@ Herramientas necesarias antes de empezar el proyecto:
 - Git.
 
 
-## Antes de empezar
+## Clonar el proyecto en tu computador
 
 Si deseas probar este proyecto en tu computador debes tener instalados las siguientes herramientas:
 - **[Composer](https://getcomposer.org/)**: Aquí va algo.
@@ -42,10 +53,10 @@ Si deseas probar este proyecto en tu computador debes tener instalados las sigui
 - **[Git](https://git-scm.com/)**: Aquí va algo.
 - **[Laragon](https://laragon.org/)**: Aquí va algo.
 
-Una vez instalados las herramientas anteriores, debes clonar este repositorio en tu computador. Sigue los siguentes pasos:
+Una vez instalados las herramientas anteriores, debes clonar este repositorio en tu computador. Sigue los siguientes pasos:
 
 1. Copia la URL del repositorio: Haz clic en el botón "Code" en la página del repositorio (normalmente es un boton de color verde) y luego copia la URL proporcionada. Puedes elegir entre utilizar la URL HTTPS o la URL SSH, dependiendo de tus preferencias y configuraciones de autenticación.
-2. Abre tu terminal o línea de comandos: Navega a la ubicación del directorio en tu máquina donde deseas clonar el repositorio, por ejemplo, en mi caso uso Laragon, los proyectos se guardan en una carpeta de laragon llamada "www". Sigue la siguente secuencia: Abre cualquier carpeta, entra a "Este equipo", Disco local, laragon (en mi caso) y entra a la carpeta "www", borra la direccion que sale en la ruta de ubicacion, y colocas lo siguiente:
+2. Abre tu terminal o línea de comandos: Navega a la ubicación del directorio en tu máquina donde deseas clonar el repositorio, por ejemplo, en mi caso uso Laragon, los proyectos se guardan en una carpeta de laragon llamada "www". Sigue la siguiente secuencia: Abre cualquier carpeta, entra a "Este equipo", Disco local, laragon (en mi caso) y entra a la carpeta "www", borra la direccion que sale en la ruta de ubicación, y colocas lo siguiente:
 ```
 cmd
 ```
@@ -65,11 +76,11 @@ code .
 composer install
 npm install
 ```
-7. Configura tu base de datos: Para configurar tu base de datos debes hacer una copia del archivo .env.example, lo puedes realizar ejecutando la siguiente linea de comando:
+7. Configura tu base de datos: Para configurar tu base de datos debes hacer una copia del archivo .env.example, lo puedes realizar ejecutando la siguiente línea de comando:
 ```
 cp .env.example .env
 ```
-Esto generara un archivo llamado .env, en este archivo puedes editar el nombre de tu base de datos que se generara al realizar las migraciones.
+Esto generará un archivo llamado .env, en este archivo puedes editar el nombre de tu base de datos que se generará al realizar las migraciones.
 
 Por ejemplo, en el archivo ".env", en la line donde esta DB_DATABASE puedes cambiar el nombre de tu base de datos:
 ```
@@ -80,53 +91,24 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-8. Construye tus tablas y atributos: Para crear tu base de datos, tablas y atributos (necesarios para el funcionamiento del proyecto), debes iniciar MySQL, en mi caso como uso Laragon solo debo abrir la aplicacion y este se encargara de iniciar un servidor web y el servicio de MySQL. Una vez iniciado los servicios se deben migrar las tablas del proyecto con el siguiente comando:
+8. Construye tus tablas y atributos: Para crear tu base de datos, tablas y atributos (necesarios para el funcionamiento del proyecto), debes iniciar MySQL, en mi caso como uso Laragon solo debo abrir la aplicación y hacer click en el botón "Iniciar", este se encargará de iniciar un servidor web y el servicio de MySQL. Una vez iniciado los servicios se deben migrar las tablas del proyecto con el siguiente comando:
 ```
 php artisan migrate
 ```
-9. Si todo sale bien, ya podras usar el proyecto en tu computadora de forma local, debes tener corriendo los servicios de MySQL y el servidor Web, a traves de Larago. Ademas, debes tener compilado los componentes de React con el siguiente comando:
+9. Si todo sale bien, ya podrás usar el proyecto en tu computadora de forma local, debes tener corriendo los servicios de MySQL y el servidor Web, a través de Laragon. Además, debes tener compilado los componentes de React con el siguiente comando:
 ```
 npm run dev
 ```
-Y por ultimo debes ejecutar el servidor de desarrollo de Laravel para probar el proyecto en tu máquina local. Utiliza el siguiente comando:
+Y por último, debes ejecutar el servidor de desarrollo de Laravel para probar el proyecto en tu máquina local. Utiliza el siguiente comando:
 ```
 php artisan serve
 ```
 
+Con estos pasos debería funcionar el proyecto en tu computador.
 
 
-## Laravel Sponsors
+## Tablas y atributos:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+La siguiente imagen muestra el modelo para la base de datos de este proyecto:
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
