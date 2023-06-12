@@ -47,12 +47,12 @@ Una vez instalados las herramientas anteriores, debes clonar este repositorio en
 1. Copia la URL del repositorio: Haz clic en el botón "Code" en la página del repositorio (normalmente es un boton de color verde) y luego copia la URL proporcionada. Puedes elegir entre utilizar la URL HTTPS o la URL SSH, dependiendo de tus preferencias y configuraciones de autenticación.
 2. Abre tu terminal o línea de comandos: Navega a la ubicación del directorio en tu máquina donde deseas clonar el repositorio, por ejemplo, en mi caso uso Laragon, los proyectos se guardan en una carpeta de laragon llamada www. Sigue la siguente secuencia: Abre cualquier carpeta, entra a "Este equipo", Disco local, laragon (en mi caso) y entra a la carpeta "www", borra la direccion que sale en la ruta de ubicacion, y colocas "cmd" (sin comillas).
 3. Ejecuta el comando de clonación: En tu terminal o línea de comandos, ejecuta el siguiente comando, reemplazando <URL_del_repositorio> con la URL que copiaste anteriormente:
-
 Por ejemplo, si estás utilizando la URL HTTPS, el comando se vería así:
 '''
 git clone https://github.com/Estebanlv06/Laravel-React-CRUD.git
 '''
 4. Presiona Enter para ejecutar el comando. Git comenzará a clonar el repositorio en tu máquina. Verás un mensaje que muestra el progreso de la clonación y una vez finalizado, el repositorio estará disponible localmente en el directorio especificado.
+
 5. Puedes usar el siguiente comando para abrir el proyecto en VSC:
 '''
 code .
