@@ -45,7 +45,7 @@ Si deseas probar este proyecto en tu computador debes tener instalados las sigui
 Una vez instalados las herramientas anteriores, debes clonar este repositorio en tu computador. Sigue los siguentes pasos:
 
 1. Copia la URL del repositorio: Haz clic en el botón "Code" en la página del repositorio (normalmente es un boton de color verde) y luego copia la URL proporcionada. Puedes elegir entre utilizar la URL HTTPS o la URL SSH, dependiendo de tus preferencias y configuraciones de autenticación.
-2. Abre tu terminal o línea de comandos: Navega a la ubicación del directorio en tu máquina donde deseas clonar el repositorio, por ejemplo, en mi caso uso Laragon, los proyectos se guardan en una carpeta de laragon llamada www. Sigue la siguente secuencia: Abre cualquier carpeta, entra a "Este equipo", Disco local, laragon (en mi caso) y entra a la carpeta "www", borra la direccion que sale en la ruta de ubicacion, y colocas lo siguiente:
+2. Abre tu terminal o línea de comandos: Navega a la ubicación del directorio en tu máquina donde deseas clonar el repositorio, por ejemplo, en mi caso uso Laragon, los proyectos se guardan en una carpeta de laragon llamada "www". Sigue la siguente secuencia: Abre cualquier carpeta, entra a "Este equipo", Disco local, laragon (en mi caso) y entra a la carpeta "www", borra la direccion que sale en la ruta de ubicacion, y colocas lo siguiente:
 ```
 cmd
 ```
@@ -57,18 +57,18 @@ git clone https://github.com/Estebanlv06/Laravel-React-CRUD.git
 4. Presiona Enter para ejecutar el comando. Git comenzará a clonar el repositorio en tu máquina. Verás un mensaje que muestra el progreso de la clonación y una vez finalizado, el repositorio estará disponible localmente en el directorio especificado.
 
 5. Puedes usar el siguiente comando para abrir el proyecto en VSC:
-'''
+```
 code .
-'''
+```
 6. Puedes abrir la consola de comando de VSC con ctrl+j: una vez abierto la consola de VSC puedes instalar las dependencias de PHP y Node.js con los siguientes comandos (instalar ambos):
-'''
+```
 composer install
 npm install
-'''
+```
 7. Configura tu base de datos: Para configurar tu base de datos debes hacer una copia del archivo .env.example, lo puedes realizar ejecutando la siguiente linea de comando:
-'''
+```
 cp .env.example .env
-'''
+```
 Esto generara un archivo llamado .env, en este archivo puedes 
 
 
