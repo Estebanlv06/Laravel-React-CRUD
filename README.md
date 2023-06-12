@@ -57,10 +57,10 @@ Antes de iniciar el proyecto, asegúrate de tener instaladas las siguientes herr
 
 Si deseas probar este proyecto en tu computadora debes tener instalados las siguientes herramientas:
 
-- Composer: Aquí va algo.
-- Node.js: Aquí va algo.
-- Git: Aquí va algo.
-- Laragon: Aquí va algo.
+- **[Composer](https://getcomposer.org/)**: Herramienta de administración de dependencias para PHP.
+- **[Node.js](https://nodejs.org/es)**: Entorno de ejecución de JavaScript en el lado del servidor.
+- **[Git](https://git-scm.com/)**: Sistema de control de versiones distribuido para rastrear cambios en el código fuente.
+- **[Laragon](https://laragon.org/)**: Entorno de desarrollo local para proyectos PHP en Windows, que proporciona una alternativa a herramientas populares como XAMPP, WAMP, MAMP y otros.
 
 Una vez instalados las herramientas anteriores, debes clonar este repositorio en tu computador. Sigue los siguientes pasos:
 
