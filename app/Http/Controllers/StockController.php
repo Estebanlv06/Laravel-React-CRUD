@@ -29,15 +29,15 @@ class StockController extends Controller
         $stock->bodega_id = $validated['bodega_id'];
         $stock->producto_id = $validated['producto_id'];
         $stock->stock = $validated['stock'];
-
         $stock->save();
-
         return redirect()->back();
     }
 
-    public function show(Stock $stock)
+    public function show(Request $request, $stock)
     {
+        
         $stocks = Stock::where('bodega_id', $stock)->get();
+        
         $existingStocks = $stocks->map(function ($stock) {
             $stock->name = $stock->productos->name;
             $stock->description = $stock->productos->description;
@@ -50,23 +50,24 @@ class StockController extends Controller
         if ($existingStocks->isEmpty()) {
             $allProducts = Producto::all();
             if($allProducts->isEmpty()){
-                return response()->json([
+                return [
                     'message' => 'No se encontraron productos en la bodega ni tampoco se encontraron productos para agregar',
                     'stocks' => [],
-                    'noProductos' => [],
-                ], 204);
+                    'noProductos' => []
+                ]; 
             }
-            return response()->json([
+            
+            return [
                 'message' => 'No se encontraron productos para la bodega especificada',
                 'stocks' => [],
-                'noProductos' => $allProducts,
-            ], 200);
+                'noProductos' => $allProducts
+            ]; 
         }
-    
-        return response()->json([
+        
+        return [
             'stocks' => $existingStocks,
-            'noProductos' => $allProducts,
-        ], 200);
+            'noProductos' => $allProducts
+        ]; 
     }
 
     public function update(Request $request, $id)
@@ -74,14 +75,12 @@ class StockController extends Controller
         $stock = Stock::find($id);
         $stock->stock = $request->stock;
         $stock->save();
-    
         return redirect()->back();
     }
 
     public function destroy(Stock $stock)
     {
         $stock->delete();
-    
         return redirect()->back();
     }
 }

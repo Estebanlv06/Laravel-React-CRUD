@@ -36,6 +36,12 @@ export default function Authenticated({ header, children }) {
                                     Productos
                                 </NavLink>
                             </div>
+
+                            <div className="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                                <NavLink href={route('stocks.index')} active={route().current('stocks.index')}>
+                                    Stock
+                                </NavLink>
+                            </div>
                             
                         </div>
 
