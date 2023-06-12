@@ -1,7 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><h1 width="400">CRUD Laravel-React</h1></a></p>
 
-CRUD Laravel-React
-
 ## Antes de comenzar
 
 Hay algunos puntos importantes que debes tener en cuenta sobre este proyecto:
