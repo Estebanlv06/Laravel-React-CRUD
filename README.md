@@ -55,7 +55,14 @@ Antes de iniciar el proyecto, asegúrate de tener instaladas las siguientes herr
 
 ## Clonar el proyecto en tu computadora
 
-Si deseas probar este proyecto en tu computadora, sigue estos pasos para clonar el repositorio:
+Si deseas probar este proyecto en tu computadora debes tener instalados las siguientes herramientas:
+
+- Composer: Aquí va algo.
+- Node.js: Aquí va algo.
+- Git: Aquí va algo.
+- Laragon: Aquí va algo.
+
+Una vez instalados las herramientas anteriores, debes clonar este repositorio en tu computador. Sigue los siguientes pasos:
 
 1. Copia la URL del repositorio: Haz clic en el botón "Code" en la página del repositorio (normalmente es un botón de color verde) y luego copia la URL proporcionada. Puedes elegir entre utilizar la URL HTTPS o la URL SSH, dependiendo de tus preferencias y configuraciones de autenticación.
 
