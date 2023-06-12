@@ -69,7 +69,29 @@ npm install
 ```
 cp .env.example .env
 ```
-Esto generara un archivo llamado .env, en este archivo puedes 
+Esto generara un archivo llamado .env, en este archivo puedes editar el nombre de tu base de datos que se generara al realizar las migraciones.
+
+Por ejemplo, en el archivo ".env", en la line donde esta DB_DATABASE puedes cambiar el nombre de tu base de datos:
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+```
+8. Construye tus tablas y atributos: Para crear tu base de datos, tablas y atributos (necesarios para el funcionamiento del proyecto), debes iniciar MySQL, en mi caso como uso Laragon solo debo abrir la aplicacion y este se encargara de iniciar un servidor web y el servicio de MySQL. Una vez iniciado los servicios se deben migrar las tablas del proyecto con el siguiente comando:
+```
+php artisan migrate
+```
+9. Si todo sale bien, ya podras usar el proyecto en tu computadora de forma local, debes tener corriendo los servicios de MySQL y el servidor Web, a traves de Larago. Ademas, debes tener compilado los componentes de React con el siguiente comando:
+```
+npm run dev
+```
+Y por ultimo debes ejecutar el servidor de desarrollo de Laravel para probar el proyecto en tu máquina local. Utiliza el siguiente comando:
+```
+php artisan serve
+```
 
 
 
