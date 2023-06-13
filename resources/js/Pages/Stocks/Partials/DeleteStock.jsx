@@ -24,7 +24,7 @@ export default function DeleteStock({ producto, onClose, fetchData, showSuccess 
     return (
         <div className="flex flex-col">
             <form>
-                <p className="mb-4">¿Estás seguro que quieres eliminar el producto? con nombre: {producto.name}</p>
+                <p className="mb-4">¿Estás seguro que quieres eliminar el producto de la bodega? con nombre: {producto.name}</p>
             </form>
             <div className="flex justify-between">
                 <Button
