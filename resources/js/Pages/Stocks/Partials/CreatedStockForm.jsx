@@ -57,7 +57,7 @@ export default function CreatedStockFrom({ bodega, productos, onClose, showSucce
             </div>
             <InputError message={errors.stock} className="mt-2 text-red-500" />
         </form>
-        <div className="flex justify-between mt-4">
+        <div className="flex items-center justify-center space-x-4">
                 <Button
                     label="Cancelar"
                     outlined

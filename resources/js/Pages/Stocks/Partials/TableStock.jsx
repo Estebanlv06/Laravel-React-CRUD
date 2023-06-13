@@ -79,7 +79,7 @@ export default function TableStock({ productos, fetchData }) {
                 )}
             </Dialog>
 
-            <Dialog header="Eliminar Producto" visible={deleteVisible} style={{ width: '20vw' }} onHide={() => setDeleteVisible(false)}>
+            <Dialog header="Eliminar Producto" visible={deleteVisible} style={{ width: '30vw' }} onHide={() => setDeleteVisible(false)}>
                 {selectedStock && (
                     <DeleteStock
                         producto={selectedStock} 
