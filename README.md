@@ -147,5 +147,10 @@ La descripción de las tablas "bodegas", "productos" y "stocks" con sus respecti
     - created_at: Fecha y hora de creación del registro del stock.
     - updated_at: Fecha y hora de la última actualización del registro del stock.
 
+## Imagenes del proyecto
+
+Inicio
+
+![Modelo BD](/public/images/modelo-bd.PNG)
 
 
