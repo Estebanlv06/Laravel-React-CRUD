@@ -20,7 +20,7 @@ class ProductoController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:100',
             'description' => 'required|string|max:500',
-            'price' => 'required|numeric|max:10000',
+            'price' => 'required|numeric|max:1000000000',
         ]);
 
         $producto = new Producto();
@@ -34,6 +34,12 @@ class ProductoController extends Controller
 
     public function update(Request $request, $id)
     {
+        $validated = $request->validate([
+            'name' => 'required|string|max:100',
+            'description' => 'required|string|max:500',
+            'price' => 'required|numeric|max:1000000000',
+        ]);
+        
         $producto = Producto::find($id);
         $producto->name = $request->name;
         $producto->description = $request->description;

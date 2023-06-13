@@ -51,6 +51,7 @@ export default function CreatedStockFrom({ bodega, productos, onClose, showSucce
                     id="stock"
                     value={data.stock}
                     onChange={(e) => setData('stock', e.target.value)}
+                    maxLength={7}
                     className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 />
             </div>

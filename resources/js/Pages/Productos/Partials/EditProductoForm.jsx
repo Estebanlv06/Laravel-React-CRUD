@@ -35,6 +35,7 @@ export default function EditProductoForm({ producto, onClose, showSuccess }) {
                         value={data.name}
                         onChange={(e) => setData('name', e.target.value)}
                         required
+                        maxLength={100}
                         autoFocus
                         className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     />
@@ -46,6 +47,7 @@ export default function EditProductoForm({ producto, onClose, showSuccess }) {
                         id="description"
                         value={data.description}
                         onChange={(e) => setData('description', e.target.value)}
+                        maxLength={500}
                         rows={5}
                         className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     />
@@ -57,6 +59,8 @@ export default function EditProductoForm({ producto, onClose, showSuccess }) {
                         id="price"
                         value={data.price}
                         onChange={(e) => setData('price', e.target.value)}
+                        required
+                        maxLength={10}
                         className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     />
                 </div>
