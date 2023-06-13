@@ -5,7 +5,7 @@
 Hay algunos puntos importantes que debes tener en cuenta sobre este proyecto:
 
 - Aunque este proyecto no está completo, se pueden realizar las acciones más importantes de un CRUD.
-- La eliminación en cascada no está disponible actualmente. Por ejemplo, si deseas eliminar un producto que está en una bodega, la aplicación mostrará un error (actualmente este error no está controlado).
+- La eliminación en cascada permite eliminar automáticamente todos los registros asociados en otras tablas cuando se elimina un producto. No se mostrará un mensaje específico durante este proceso, ya que la eliminación se realiza en segundo plano de manera silenciosa.
 - El proyecto incluye varios archivos innecesarios que fueron instalados por Breeze, que permite una aplicación conjunta de Laravel y React en un solo archivo. Estos archivos no generan errores en la aplicación.
 - En futuras actualizaciones, se agregarán comentarios en los archivos para una mejor comprensión de cada línea de código.
 - La parte visual del proyecto se irá modificando con el tiempo.
