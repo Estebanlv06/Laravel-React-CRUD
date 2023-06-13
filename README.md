@@ -123,22 +123,18 @@ La siguiente imagen muestra el modelo para la base de datos de este proyecto:
 La descripción de las tablas "bodegas", "productos" y "stocks" con sus respectivos atributos:
 
 1. Tabla "bodegas":
-
-    Atributos:
         - id: Identificador único de la bodega (entero o cadena).
         - nombre: Nombre de la bodega (cadena).
         - ubicacion: Ubicación física de la bodega (cadena).
         - capacidad: Capacidad máxima de almacenamiento de la bodega (entero).
 
 2. Tabla "productos":
-    Atributos:
         - id: Identificador único del producto (entero o cadena).
         - nombre: Nombre del producto (cadena).
         - descripcion: Descripción del producto (cadena).
         - precio: Precio del producto (decimal o flotante).
 
 3. Tabla "stocks":
-    Atributos:
         - id: Identificador único del stock (entero o cadena).
         - bodega_id: ID de la bodega asociada al stock (entero o cadena).
         - producto_id: ID del producto asociado al stock (entero o cadena).
