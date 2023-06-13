@@ -26,25 +26,23 @@ Tecnologías utilizadas:
 
 El proyecto utiliza las siguientes tecnologías:
 
-- PHP
-- Laravel
-- React
+- PHP (v8.1.10)
+- Laravel (v10.10)
+- React (v18.2.0)
 - JavaScript
 - HTML5
-- Tailwind
-- PrimeReact
-- MySQL
+- Tailwind (v3.2.1)
+- PrimeReact (v9.5.0)
+- MySQL (v8.0.30)
 
 Otras herramientas utilizadas durante el desarrollo del proyecto:
 
+- Composer (v2.4.1)
+- Node.js (v18.8.0)
+- Git (v2.37.3)
 - Laragon
 - Visual Studio Code
 - GitHub
-- Composer
-- Node.js
-- Git
-- Laragon
-
 
 ## Clonar el proyecto en tu computadora
 
