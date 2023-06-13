@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><h1 width="400">CRUD Laravel-React</h1></a></p>
+<h1 align="center">CRUD Laravel-React </h1>
 
 ## Antes de comenzar
 
