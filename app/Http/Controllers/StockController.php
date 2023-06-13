@@ -22,7 +22,7 @@ class StockController extends Controller
         $validated = $request->validate([
             'bodega_id' => 'required|numeric',
             'producto_id' => 'required|numeric',
-            'stock' => 'required|numeric|max:10000',
+            'stock' => 'required|numeric|max:1000000',
         ]);
 
         $stock = new Stock();
@@ -72,6 +72,12 @@ class StockController extends Controller
 
     public function update(Request $request, $id)
     {
+        $validated = $request->validate([
+            'bodega_id' => 'required|numeric',
+            'producto_id' => 'required|numeric',
+            'stock' => 'required|numeric|max:1000000',
+        ]);
+        
         $stock = Stock::find($id);
         $stock->stock = $request->stock;
         $stock->save();

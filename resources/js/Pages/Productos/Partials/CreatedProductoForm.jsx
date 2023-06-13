@@ -39,6 +39,7 @@ export default function CreatedProductoFrom({ onClose, showSuccess }) {
                     value={data.name}
                     onChange={(e) => setData('name', e.target.value)}
                     required
+                    maxLength={100}
                     autoFocus
                     placeholder="Nombre Producto"
                     className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
@@ -52,6 +53,7 @@ export default function CreatedProductoFrom({ onClose, showSuccess }) {
                     value={data.description}
                     onChange={(e) => setData('description', e.target.value)}
                     placeholder="Descripción"
+                    maxLength={500}
                     rows={5}
                     className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                 />
@@ -66,6 +68,7 @@ export default function CreatedProductoFrom({ onClose, showSuccess }) {
                         value={data.price}
                         onChange={(e) => setData('price', e.target.value)}
                         required
+                        maxLength={10}
                         className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     />
                 </div>

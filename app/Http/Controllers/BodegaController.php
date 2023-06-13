@@ -19,7 +19,7 @@ class BodegaController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
+            'name' => 'required|string|max:100',
         ]);
 
         $bodega = new Bodega();
@@ -31,6 +31,10 @@ class BodegaController extends Controller
 
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'name' => 'required|max:100', 
+        ]);
+
         $bodega = Bodega::find($id);
         $bodega->name = $request->name;
         $bodega->save();

@@ -31,6 +31,7 @@ export default function EditBodegaForm({ bodega, onClose, showSuccess }) {
                         value={data.name}
                         onChange={(e) => setData('name', e.target.value)}
                         required
+                        maxLength={100}
                         autoFocus
                         className="w-full border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
                     />
