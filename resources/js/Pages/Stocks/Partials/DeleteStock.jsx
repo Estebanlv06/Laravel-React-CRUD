@@ -8,7 +8,6 @@ export default function DeleteStock({ producto, onClose, fetchData, showSuccess 
         producto_id: producto.producto_id,
         stock: producto.stock,
     });
-    console.log(data.id);
     const submit = (e) => {
         e.preventDefault();
         destroy(route('stocks.destroy', { stock: data }), {

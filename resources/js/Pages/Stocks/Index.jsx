@@ -58,58 +58,57 @@ export default function Index({ bodegas }) {
 
         <div className="py-12">
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-            <div className="mb-4">
-                <InputLabel htmlFor="bodegas" value="Bodegas" />
-                <Dropdown
-                value={data.id}
-                onChange={(e) => setData('id', e.value)}
-                options={bodegas.map((bodega) => ({
-                    label: bodega.name,
-                    value: bodega.id,
-                }))}
-                required
-                placeholder={data.id ? `Bodega ${data.id}` : 'Selecciona una bodega'}
-                className="w-full md:w-14rem"
-                />
-            </div>
-            <div className="p-4 pb-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div className="mt-6">
-
-                    <TableStock
-                        productos={productos}
-                        fetchData={fetchData}
+                <div className="mb-4">
+                    <Dropdown
+                    value={data.id}
+                    onChange={(e) => setData('id', e.value)}
+                    options={bodegas.map((bodega) => ({
+                        label: bodega.name,
+                        value: bodega.id,
+                    }))}
+                    required
+                    placeholder={data.id ? `Bodega ${data.id}` : 'Selecciona una bodega'}
+                    className="w-full md:w-14rem"
                     />
-
                 </div>
-            </div>
-            <div className="flex justify-between">
-                {data.id && noProductos.length > 0 && (
-                    <div>
-                        <Button
-                        label="Agregar producto"
-                        icon="pi pi-plus"
-                        rounded
-                        severity="success"
-                        onClick={() => setProductoVisible(true)}
-                        className="w-auto"
+                <div className="p-4 pb-4 sm:p-8 bg-white shadow sm:rounded-lg">
+                    <div className="mt-6">
+
+                        <TableStock
+                            productos={productos}
+                            fetchData={fetchData}
                         />
-                        <Dialog
-                        header="Agregar producto a bodega"
-                        visible={productovisible}
-                        style={{ width: '50vw' }}
-                        onHide={() => setProductoVisible(false)}
-                        className="max-w-3xl"
-                        >
-                        <CreatedStockForm
-                            bodega={data.id}
-                            productos={noProductos}
-                            onClose={handleClose}
-                            showSuccess={showSuccess}
-                        />
-                        </Dialog>
+
                     </div>
-                )}
-            </div>
+                </div>
+                <div className="flex justify-between">
+                    {data.id && noProductos.length > 0 && (
+                        <div>
+                            <Button
+                            label="Agregar producto"
+                            icon="pi pi-plus"
+                            rounded
+                            severity="success"
+                            onClick={() => setProductoVisible(true)}
+                            className="w-auto"
+                            />
+                            <Dialog
+                            header="Agregar producto a bodega"
+                            visible={productovisible}
+                            style={{ width: '50vw' }}
+                            onHide={() => setProductoVisible(false)}
+                            className="max-w-3xl"
+                            >
+                            <CreatedStockForm
+                                bodega={data.id}
+                                productos={noProductos}
+                                onClose={handleClose}
+                                showSuccess={showSuccess}
+                            />
+                            </Dialog>
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
         </AuthenticatedLayout>
