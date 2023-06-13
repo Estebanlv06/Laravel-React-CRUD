@@ -7,7 +7,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
 import React from 'react';
 
-export default function CreatedProductoFrom({ className, onClose, showSuccess }) {
+export default function CreatedProductoFrom({ onClose, showSuccess }) {
     const { data, setData, post, processing, reset, errors } = useForm({
         name: '',
         description: '',
@@ -28,7 +28,7 @@ export default function CreatedProductoFrom({ className, onClose, showSuccess })
     return (
     <section>
         <header>
-            <p className="mt-1 text-sm text-gray-600">Agrega un producto de tu local.</p>
+            <p className="mt-1 text-sm text-gray-600">Agrega un producto</p>
         </header>
 
         <form className="flex flex-col p-4">

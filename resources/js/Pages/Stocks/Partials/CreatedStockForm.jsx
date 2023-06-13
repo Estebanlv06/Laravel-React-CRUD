@@ -27,7 +27,7 @@ export default function CreatedStockFrom({ bodega, productos, onClose, showSucce
     return (
     <section>
         <header>
-            <p className="mt-1 text-sm text-gray-600">Agrega un producto de tu local.</p>
+            <p className="mt-1 text-sm text-gray-600">Agrega un producto a la bodega</p>
         </header>
 
         <form className="flex flex-col p-4">

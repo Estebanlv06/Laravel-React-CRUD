@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-
 import CreatedBodegaForm from './Partials/CreatedBodegaForm';
 import TableBodegas from './Partials/TableBodegas';
 import { Dialog } from 'primereact/dialog';
