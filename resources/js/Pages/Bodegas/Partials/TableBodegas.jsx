@@ -30,15 +30,20 @@ export default function TableBodegas({ bodegas }) {
     const actionTemplate = (bodega) => {
         return (
             <div>
-                <Button
-                    icon="pi pi-pencil"
-                    className="p-button-rounded p-button-success"
+                <Button 
+                    icon="pi pi-pencil" 
+                    rounded 
+                    severity="warning" 
+                    className="p-button-rounded p-button-success p-button-sm"
                     onClick={() => openEditModal(bodega)}
                 />
-                <Button
-                    icon="pi pi-trash"
-                    className="p-button-rounded p-button-danger"
-                    onClick={() => openDeleteModal(bodega)}
+                <span className="mr-2"></span>
+                <Button 
+                    icon="pi pi-trash" 
+                    rounded 
+                    severity="danger" 
+                    className="p-button-rounded p-button-danger p-button-sm"
+                    onClick={() => openDeleteModal(bodega)} 
                 />
             </div>
         );
@@ -55,7 +60,7 @@ export default function TableBodegas({ bodegas }) {
 
             <DataTable value={bodegas.map((bodega) => ({ ...bodega }))} dataKey="id" tableStyle={{ minWidth: '50rem' }}>
                 <Column field="name" header="Nombre" />
-                <Column header="Acciones" body={actionTemplate} /> 
+                <Column header="" body={actionTemplate} /> 
             </DataTable>
 
             <Dialog header="Editar bodega" visible={editVisible} style={{ width: '50vw' }} onHide={() => setEditVisible(false)} className="max-w-3xl">

@@ -32,15 +32,21 @@ export default function TableStock({ productos, fetchData }) {
     const actionTemplate = (producto) => {
         return (
             <div>
-                <Button
-                    icon="pi pi-pencil"
-                    className="p-button-rounded p-button-success"
+                <Button 
+                    icon="pi pi-pencil" 
+                    rounded 
+                    severity="warning" 
+                    className="p-button-rounded p-button-success p-button-sm"
                     onClick={() => openEditModal(producto)}
                 />
-                <Button
-                    icon="pi pi-trash"
-                    className="p-button-rounded p-button-danger"
-                    onClick={() => openDeleteModal(producto)}
+                <span className="mr-2"></span>
+                <Button 
+                    icon="pi pi-trash" 
+                    rounded 
+                    severity="danger" 
+                    className="p-button-rounded p-button-danger p-button-sm"
+                    style={{ fontSize: '14px', padding: '6px 12px' }}
+                    onClick={() => openDeleteModal(producto)} 
                 />
             </div>
         );
@@ -59,7 +65,7 @@ export default function TableStock({ productos, fetchData }) {
                 <Column field="description" header="Descripcion" />
                 <Column field="price" header="Precio" />
                 <Column field="stock" header="Stock" />
-                <Column header="Acciones" body={actionTemplate} /> 
+                <Column header="" body={actionTemplate} /> 
             </DataTable>
 
             <Dialog header="Editar Producto" visible={editVisible} style={{ width: '50vw' }} onHide={() => setEditVisible(false)} className="max-w-3xl">
