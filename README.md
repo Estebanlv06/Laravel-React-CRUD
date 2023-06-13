@@ -177,6 +177,6 @@ Vista Stock con bodega con todos los productos:
 
 ## Próximas actualizaciones
 
-- Filtros para bodegas o productos.
+- Filtros para bodegas y productos.
 - Alerta en caso de eliminación en cascada.
 - Cambio de logo.
