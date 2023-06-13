@@ -149,8 +149,32 @@ La descripción de las tablas "bodegas", "productos" y "stocks" con sus respecti
 
 ## Imagenes del proyecto
 
-Inicio
+Vista Inicio
 
-![Modelo BD](/public/images/modelo-bd.PNG)
+![Modelo BD](/public/images/inicio.PNG)
+
+Vista Bodega
+
+![Modelo BD](/public/images/bodegas.PNG)
+
+Vista Producto
+
+![Modelo BD](/public/images/productos.PNG)
+
+Vista Stock sin seleccionar una bodega
+
+![Modelo BD](/public/images/stocks-sin-bodega.PNG)
+
+Vista Stock con bodega sin productos
+
+![Modelo BD](/public/images/stocks-productosnada-bodega.PNG)
+
+Vista Stock con bodega con algunos productos
+
+![Modelo BD](/public/images/stocks-productosalgunos-bodega.PNG)
+
+Vista Stock con bodega con todos los productos
+
+![Modelo BD](/public/images/stocks-productostodos-bodega.PNG)
 
 
