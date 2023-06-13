@@ -39,12 +39,10 @@ export default function Authenticated({ children }) {
                                     Stock
                                 </NavLink>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </nav>
-
             <main>{children}</main>
         </div>
     );
