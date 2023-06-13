@@ -124,17 +124,16 @@ La descripción de las tablas "bodegas", "productos" y "stocks" con sus respecti
 
 1. Tabla "bodegas":
 
-        - id: Identificador único de la bodega (entero o cadena).
-        - nombre: Nombre de la bodega (cadena).
-        - ubicacion: Ubicación física de la bodega (cadena).
-        - capacidad: Capacidad máxima de almacenamiento de la bodega (entero).
+- id: Identificador único de la bodega (entero o cadena).
+- nombre: Nombre de la bodega (cadena).
+- ubicacion: Ubicación física de la bodega (cadena).
+- capacidad: Capacidad máxima de almacenamiento de la bodega (entero).
 
 2. Tabla "productos":
-
-        - id: Identificador único del producto (entero o cadena).
-        - nombre: Nombre del producto (cadena).
-        - descripcion: Descripción del producto (cadena).
-        - precio: Precio del producto (decimal o flotante).
+- id: Identificador único del producto (entero o cadena).
+- nombre: Nombre del producto (cadena).
+- descripcion: Descripción del producto (cadena).
+- precio: Precio del producto (decimal o flotante).
 
 3. Tabla "stocks":
 
