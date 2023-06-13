@@ -124,24 +124,28 @@ La descripción de las tablas "bodegas", "productos" y "stocks" con sus respecti
 
 1. Tabla "bodegas":
 
-- id: Identificador único de la bodega (entero o cadena).
-- nombre: Nombre de la bodega (cadena).
-- ubicacion: Ubicación física de la bodega (cadena).
-- capacidad: Capacidad máxima de almacenamiento de la bodega (entero).
+    - id: Identificador único de la bodega (entero).
+    - name: Nombre de la bodega (cadena).
+    - created_at: Fecha y hora de creación del registro de la bodega.
+    - updated_at: Fecha y hora de la última actualización del registro de la bodega.
 
 2. Tabla "productos":
-- id: Identificador único del producto (entero o cadena).
-- nombre: Nombre del producto (cadena).
-- descripcion: Descripción del producto (cadena).
-- precio: Precio del producto (decimal o flotante).
+
+    - id: Identificador único del producto (entero).
+    - name: Nombre del producto (cadena).
+    - description: Descripción del producto (cadena).
+    - price: Precio del producto (decimal).
+    - created_at: Fecha y hora de creación del registro del producto.
+    - updated_at: Fecha y hora de la última actualización del registro del producto.
 
 3. Tabla "stocks":
 
-        - id: Identificador único del stock (entero o cadena).
-        - bodega_id: ID de la bodega asociada al stock (entero o cadena).
-        - producto_id: ID del producto asociado al stock (entero o cadena).
-        - cantidad: Cantidad de productos en stock (entero).
-        - fecha_actualizacion: Fecha de la última actualización del stock (fecha y hora).
+    - id: Identificador único del stock (entero).
+    - bodega_id: ID de la bodega asociada al stock (entero).
+    - producto_id: ID del producto asociado al stock (entero).
+    - stock: Cantidad de productos en stock (entero).
+    - created_at: Fecha y hora de creación del registro del stock.
+    - updated_at: Fecha y hora de la última actualización del registro del stock.
 
 
 
