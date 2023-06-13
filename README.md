@@ -118,4 +118,7 @@ Con estos pasos debería funcionar el proyecto en tu computador.
 
 La siguiente imagen muestra el modelo para la base de datos de este proyecto:
 
+![Modelo BD](/public/images/modelo-bd.PNG)
+
+
 
