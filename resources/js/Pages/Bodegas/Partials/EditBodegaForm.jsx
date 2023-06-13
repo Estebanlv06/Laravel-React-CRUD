@@ -12,7 +12,6 @@ export default function EditBodegaForm({ bodega, onClose, showSuccess }) {
 
     const submit = (e) => {
         e.preventDefault();
-        // Utiliza el método PUT para actualizar el bodega
         put(route('bodegas.update', { bodega: data }), {
         onSuccess: () => {
             reset();

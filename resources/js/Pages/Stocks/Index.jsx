@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useForm } from '@inertiajs/react';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
-import InputLabel from '@/Components/InputLabel';
 import { Dropdown } from 'primereact/dropdown';
 import TableStock from './Partials/TableStock';
 import CreatedStockForm from './Partials/CreatedStockForm';
@@ -12,12 +11,9 @@ import { Toast } from 'primereact/toast';
 
 export default function Index({ bodegas }) {
     const [productovisible, setProductoVisible] = useState(false);
-    //NoProductos
     const [noProductos, setNoProductos] = useState([]);
-    //Productos
     const [productos, setProductos] = useState([]);
-    //Bodegas
-    const { data, setData, get } = useForm({
+    const { data, setData } = useForm({
         id: null,
     });
     const fetchData = async () => {
