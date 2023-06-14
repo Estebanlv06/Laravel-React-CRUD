@@ -1,9 +1,8 @@
-import InputLabel from '@/Components/InputLabel';
-import InputError from '@/Components/InputError';
 import { useForm } from '@inertiajs/react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-
+import InputLabel from '@/Components/InputLabel';
+import InputError from '@/Components/InputError';
 
 export default function CreatedBodegaFrom({ onClose, showSuccess }) {
 

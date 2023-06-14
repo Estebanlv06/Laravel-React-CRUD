@@ -1,11 +1,11 @@
+import { useState } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { useState } from 'react';
+import { Toast } from 'primereact/toast';
 import EditProductoForm from './EditProductoForm';
 import DeleteProducto from './DeleteProducto';
-import { Toast } from 'primereact/toast';
 
 export default function TableProductos({ productos }) {
     const [editVisible, setEditVisible] = useState(false);
@@ -56,7 +56,6 @@ export default function TableProductos({ productos }) {
 
     return (
         <div>
-
             <Toast ref={Toast} />
             
             <DataTable value={productos} dataKey="id" tableStyle={{ minWidth: '50rem' }}>

@@ -1,5 +1,5 @@
-import { Button } from 'primereact/button';
 import { useForm } from '@inertiajs/react';
+import { Button } from 'primereact/button';
 
 export default function DeleteStock({ producto, onClose, fetchData, showSuccess }) {
     const { data, delete: destroy, processing, reset } = useForm({

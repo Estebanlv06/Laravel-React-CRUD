@@ -1,12 +1,11 @@
+import { useState } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { useState } from 'react';
+import { Toast } from 'primereact/toast';
 import DeleteStock from './DeleteStock';
 import EditStockForm from './EditStockForm';
-import { Toast } from 'primereact/toast';
-
 
 export default function TableStock({ productos, fetchData }) {
     const [editVisible, setEditVisible] = useState(false);

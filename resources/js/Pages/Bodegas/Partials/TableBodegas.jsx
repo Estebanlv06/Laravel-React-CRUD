@@ -1,11 +1,11 @@
+import { useState } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { useState } from 'react';
+import { Toast } from 'primereact/toast';
 import EditbodegaForm from './EditBodegaForm';
 import DeleteBodega from './DeleteBodega';
-import { Toast } from 'primereact/toast';
 
 export default function TableBodegas({ bodegas }) {
     const [editVisible, setEditVisible] = useState(false);
