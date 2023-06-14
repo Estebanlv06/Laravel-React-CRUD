@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react';
-import { useForm } from '@inertiajs/react';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import { useForm, Head } from '@inertiajs/react';
 import { Dropdown } from 'primereact/dropdown';
-import TableStock from './Partials/TableStock';
-import CreatedStockForm from './Partials/CreatedStockForm';
-import { Head } from '@inertiajs/react';
 import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import TableStock from './Partials/TableStock';
+import CreatedStockForm from './Partials/CreatedStockForm';
 
 export default function Index({ bodegas }) {
     const [productovisible, setProductoVisible] = useState(false);

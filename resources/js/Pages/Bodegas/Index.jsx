@@ -1,19 +1,17 @@
 
 import React, { useState } from 'react';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-import CreatedBodegaForm from './Partials/CreatedBodegaForm';
-import TableBodegas from './Partials/TableBodegas';
 import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
-        
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import CreatedBodegaForm from './Partials/CreatedBodegaForm';
+import TableBodegas from './Partials/TableBodegas';
 
 export default function Index({ bodegas }) {
 
     const [bodegavisible, setBodegaVisible] = useState(false);
     
-
     const handleClose = () => {
         setBodegaVisible(false);
     };

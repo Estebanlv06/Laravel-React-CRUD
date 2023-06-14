@@ -1,15 +1,11 @@
-
 import React, { useState } from 'react';
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-
-
-import CreatedProductoForm from './Partials/CreatedProductoForm';
-import TableProductos from './Partials/TableProductos';
 import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
-
 import { Toast } from 'primereact/toast';
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
+import CreatedProductoForm from './Partials/CreatedProductoForm';
+import TableProductos from './Partials/TableProductos';
 
 export default function Index({ productos }) {
 

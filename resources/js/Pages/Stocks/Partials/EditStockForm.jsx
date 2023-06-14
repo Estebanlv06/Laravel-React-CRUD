@@ -1,10 +1,8 @@
+import { useForm } from '@inertiajs/react';
 import { Button } from 'primereact/button';
+import { InputText } from 'primereact/inputtext'; 
 import InputLabel from '@/Components/InputLabel';
 import InputError from '@/Components/InputError';
-import { InputText } from 'primereact/inputtext'; 
-import { useForm } from '@inertiajs/react';
-
-
 
 export default function EditStockForm({ producto, onClose, fetchData, showSuccess }) {
     const { data, setData, put, processing, reset, errors } = useForm({
@@ -16,7 +14,6 @@ export default function EditStockForm({ producto, onClose, fetchData, showSucces
 
     const submit = (e) => {
         e.preventDefault();
-        // Utiliza el método PUT para actualizar el producto
         put(route('stocks.update', { stock: data }), {
             onSuccess: () => {
                 reset();

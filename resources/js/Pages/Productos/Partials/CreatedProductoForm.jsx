@@ -1,11 +1,10 @@
-import InputLabel from '@/Components/InputLabel';
-import InputError from '@/Components/InputError';
+import React from 'react';
 import { useForm } from '@inertiajs/react';
-
 import { InputText } from 'primereact/inputtext';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { Button } from 'primereact/button';
-import React from 'react';
+import InputLabel from '@/Components/InputLabel';
+import InputError from '@/Components/InputError';
 
 export default function CreatedProductoFrom({ onClose, showSuccess }) {
     const { data, setData, post, processing, reset, errors } = useForm({

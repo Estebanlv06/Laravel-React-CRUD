@@ -1,8 +1,8 @@
+import { useForm } from '@inertiajs/react';
 import { Button } from 'primereact/button';
+import { InputText } from 'primereact/inputtext'; 
 import InputLabel from '@/Components/InputLabel';
 import InputError from '@/Components/InputError';
-import { InputText } from 'primereact/inputtext'; 
-import { useForm } from '@inertiajs/react';
 
 export default function EditBodegaForm({ bodega, onClose, showSuccess }) {
     const { data, setData, put, processing, reset, errors } = useForm({

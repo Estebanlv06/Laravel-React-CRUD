@@ -1,10 +1,10 @@
-import InputLabel from '@/Components/InputLabel';
-import InputError from '@/Components/InputError';
+import React from 'react';
 import { useForm } from '@inertiajs/react';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 import { Dropdown } from 'primereact/dropdown';
-import React from 'react';
+import InputLabel from '@/Components/InputLabel';
+import InputError from '@/Components/InputError';
 
 export default function CreatedStockFrom({ bodega, productos, onClose, showSuccess }) {
     const { data, setData, post, processing, reset, errors } = useForm({
